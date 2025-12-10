@@ -12,11 +12,11 @@ const options = {
         },
         servers: [
             {
-                url: `http://localhost:${process.env.PORT || 3002}/api`,
+                url: `http://localhost:${process.env.PORT || 3001}/`,
             },
         ],
     },
-    apis: [path.join(__dirname, './routes/*.js')],
+    apis: [path.join(__dirname, './swaggerdocs/*.swaggerdocs.js')],
 };
 const swaggerSpec = swaggerJSDoc(options);
 
